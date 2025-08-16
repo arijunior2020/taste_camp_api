@@ -17,8 +17,8 @@ TasteCampi é uma API desenvolvida para facilitar o acesso a informações sobre
 ## Instalação
 
 ```bash
-git clone https://github.com/arijunior2020/tastecampi-api.git
-cd tastecampi-api
+git clone https://github.com/arijunior2020/taste_camp_api.git
+cd taste_camp_api
 npm install
 ```
 
