@@ -14,9 +14,10 @@ const router = Router();
 router.get('/receitas', listPublic);
 
 // Protegidas
-router.get('/me/receitas', auth, listMine);
-router.get('/receitas/:id', auth, getOne);
-router.post('/receitas', auth, createOne);
-router.delete('/receitas/:id', auth, deleteOne);
+router.use(auth); // Apply auth middleware to all protected routes
+router.get('/me/receitas', listMine);
+router.get('/receitas/:id', getOne);
+router.post('/receitas', createOne);
+router.delete('/receitas/:id', deleteOne);
 
 export default router;
